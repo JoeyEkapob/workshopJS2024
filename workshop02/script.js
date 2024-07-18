@@ -6,14 +6,9 @@ const form = document.getElementById('form')
 const text = document.getElementById('text')
 const amount = document.getElementById('amount');
 
-const data = [
-    { id: 1, text: "ค่าขนม", amount: +10000 },
-    { id: 2, text: "ข้าว", amount: -50 },
-    { id: 3, text: "ขนม", amount: -20 }
 
-];
 
-let datatran = data;
+let datatran = [];
 
 function init() {
     list.innerHTML='';
