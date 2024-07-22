@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เกทพิมเร็ว</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="levelbtn" class="levelbtn"><i class="fas fa-cog"></i></button>
+    <div class="seting hine" id="seting">
+        <form action="" id="levelform">
+            <label for="">level : </label>
+            <select name="" id="level">
+                <option value="easy">ง่าย</option>
+                <option value="medium">ปานกลาง</option>
+                <option value="hard">ยาก</option>
+            </select>
+        </form>
+    </div>
+    <div class="container">
+        <h2>เกมพิมพ์เร็ว</h2>
+        <!-- <small>ฝึกการพิม</small> -->
+        <h1 id="word" class="word">เษด</h1>
+        <input type="text" name="" id="text" autocomplete="off" placeholder="ป้อนคำตามที่เห็น">
+        <p class="timecontiner">เวลา <span id="time"></span> วินาที</p>
+        <p  class="scrorecontiner"><span id="score">10 คะแนน</span></p>
+        <div  class="gameovercontiner" id="gameoeverctaniter">
+            <h2>จบเกมเเล้วนะ</h2>
+        </div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>
