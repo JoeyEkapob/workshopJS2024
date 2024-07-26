@@ -1,45 +1,45 @@
-const music_container = document.getElementById('music-container');
-const playbtn = document.getElementById('play')
-const prevbtn = document.getElementById('prev')
-const nextbtn = document.getElementById('next')
-const audio = document.getElementById('audio')
-const progess = document.getElementById('progess')
-const progesscontainer = document.getElementById('progess-container')
-const title = document.getElementById('title')
-const cover = document.getElementById('cpver')
+const musiccontainereltel = document.getElementById('music-container')
+const titleel = document.getElementById('title')
+const progresscontainerel = document.getElementById('progress-container')
+const progessel = document.getElementById('progess')
+const audioel = document.getElementById('audio')
+const coverel = document.getElementById('cover')
+const prevel= document.getElementById('prev')
+const playel = document.getElementById('play')
+const nextel = document.getElementById('next')
 
-const songs =["Contra","Havestmoon","Mario"]
-let index=1;
+const songs=["Contra","HavestMoon","Mario"];
 
-function loadsongs(song){
-    title.innerHTML=`ชื่อ ${song}.mp3`;
-    cover.src=`cover/${song}.jpg`;
-    audio.src=`music/${song}.mp3`
+let index=0;
 
+
+function loadsong(songs){
+    titleel.innerText=`เพลง ชื่อ ${songs}.mp3`
+    coverel.src=`cover/${songs}.jpg`
+    audioel.src=`music/${songs}.mp3`
 }
 
-loadsongs(songs[index])
+loadsong(songs[index])
 
-playbtn.addEventListener('click',()=>{
-    const isplay = music_container.classList.contains('play')
-
+playel.addEventListener('click',()=>{
+    const isplay=musiccontainereltel.classList.contains('play')
     if(isplay){
         pausesong();
-
     }else{
         playsong();
     }
 })
 
-function pausesong(){
-    music_container.classList.add('play')
-    playbtn.querySelector('i.fas').classList.remove('fa-play')
-    playbtn.querySelector('i.fas').classList.add('fa-pause')
-    audio.play();
-}
 function playsong(){
-    music_container.classList.remove('play')
-    playbtn.querySelector('i.fas').classList.remove('fa-pause')
-    playbtn.querySelector('i.fas').classList.add('fa-play')
-    audio.pause();
+    musiccontainereltel.classList.add('play')
+    playel.querySelector('i.fas').classList.remove('fa-play')
+    playel.querySelector('i.fas').classList.add('fa-pause')
+    audioel.play()
+}
+
+function pausesong(){
+    musiccontainereltel.classList.remove('play')
+    playel.querySelector('i.fas').classList.remove('fa-pause')
+    playel.querySelector('i.fas').classList.add('fa-play')
+    audioel.pause()
 }

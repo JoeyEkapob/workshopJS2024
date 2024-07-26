@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
 }
 body{
@@ -11,14 +11,14 @@ body{
     margin: 0;
 }
 .music-container{
-    background-color: #fff;
+    background-color: aliceblue;
     border-radius: 15px;
-    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.5);
     display: flex;
     padding: 20px 30px;
     position: relative;
-    margin:100px 0;
-    z-index:10;
+    margin: 100px 0;
+    z-index: 10;
 }
 .imgcontainer{
     position: relative;
@@ -31,7 +31,7 @@ body{
     object-fit: cover;
     position: absolute;
     bottom: 0;
-    left:0;
+    left: 0;
     animation: rotate 5s linear infinite;
     animation-play-state: paused;
 }
@@ -49,14 +49,14 @@ body{
 .navigation{
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     z-index: 1;
 }
 .actionbtn{
-    background:#fff;
+    background: #fff;
     border: 0;
-    color: #dfdbdf;
-    font-size: 20px;
+    color:#dfdbdf;
+    font: size 20px;
     padding: 10px;
     margin: 0 20px;
 }
@@ -67,39 +67,39 @@ body{
     transform: scale(0.98);
 }
 .musicinfo{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255,255,255, 0.5);
     border-radius: 15px 15px 0 0;
-    position: absolute;
+    position:relative;
     top:0;
     width: calc(100%-40px);
-    left:20px;
+    left: 20px;
     opacity: 0;
-    transform: translateY(0%);
+    transform: translate(0%);
     padding: 10px 10px 10px 150px;
     transition: transform 0.3s ease-in,opacity 0.3s;
-
-
 }
 .music-container.play .musicinfo{
-    transform:  translateY(-100%);
+    transform: translateY(-100%);
     opacity: 1;
 }
 .musicinfo h4{
     margin: 0;
-
+    
 }
 .progress-container{
-    background-color:#fff ;
+    background-color: #fff;
     width: 100%;
     height: 4px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0 ;
+    margin: 10px 0;
 }
 .progress{
     background-color: red;
-    width: 70%;
+    width: 0%;
     height: 100%;
     border-radius: 5px;
     transition: width 0.1s linear;
+
 }
+ */

@@ -13,32 +13,32 @@
 
 <body>
     <h1>โปรเเกรมเล่นเพลง music api</h1>
-    <div class="music-container" id="music-container">
-        <div class="musicinfo">
-            <h4 class="title" id="title">เพลงมาริโอ้</h4>
-            <div class="progress-container" id="progress-container">
-                <div class="progress" id="progess"></div>
+        <div class="music-container play" id="music-container">
+            <div class="musicinfo">
+                <h4 class="title" id="title">เพลงมาริโอ้</h4>
+                <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progess"></div>
+                </div>
+            </div>
+            <audio src="music/Mario.mp3" controls hidden id="audio"></audio>
+            <div class="imgcontainer">
+                <img src="cover/Mario.jpg" alt="" id="cover">
+            </div>
+            <div class="navigation">
+                <button id="prev" class="actionbtn">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="actionbtn">
+                    <i class="fas fa-play"></i>
+
+                </button>
+                <button id="next" class="actionbtn">
+                    <i class="fas fa-forward"></i>
+
+                </button>
+
             </div>
         </div>
-        <audio src="music/Mario.mp3" controls hidden id="audio"></audio>
-        <div class="imgcontainer">
-            <img src="cover/Mario.jpg" alt="" id="cover">
-        </div>
-        <div class="navigation">
-            <button id="prev" class="actionbtn">
-                <i class="fas fa-backward"></i>
-            </button>
-            <button id="play" class="actionbtn">
-                <i class="fas fa-play"></i>
-
-            </button>
-            <button id="next" class="actionbtn">
-                <i class="fas fa-forward"></i>
-
-            </button>
-
-        </div>
-    </div>
 </body>
 <script src="script.js"></script>
 
