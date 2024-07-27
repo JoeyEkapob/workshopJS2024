@@ -29,6 +29,26 @@ playel.addEventListener('click',()=>{
         playsong();
     }
 })
+function nextsong(){
+
+    index++;
+    if(index>songs.length-1){
+        index=0
+    }
+    loadsong(songs[index])
+    playsong();
+
+}
+nextel.addEventListener('click',nextsong)
+
+prevel.addEventListener('click',()=>{
+    index--;
+    if(index<0){
+        index=songs.length-1;
+    }
+    loadsong(songs[index])
+    playsong();
+})
 
 function playsong(){
     musiccontainereltel.classList.add('play')
@@ -43,3 +63,24 @@ function pausesong(){
     playel.querySelector('i.fas').classList.add('fa-play')
     audioel.pause()
 }
+audioel.addEventListener('timeupdate',updataprogress)
+
+function updataprogress(e){
+
+    const {duration,currentTime} =e.srcElement;
+    const progessper = (currentTime/duration)*100
+    progessel.style.width=`${progessper}%`
+
+}
+
+progresscontainerel.addEventListener('click',setprogress)
+
+function setprogress(e){
+    const  width=this.clientWidth;
+    const clickx=e.offsetX;
+    const duration = audioel.duration;
+    console.log(width,clickx,duration)
+    audioel.currentTime=(clickx/width)*duration
+}
+
+audioel.addEventListener('ended',nextsong)
