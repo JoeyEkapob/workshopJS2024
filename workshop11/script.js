@@ -12,6 +12,9 @@ form.addEventListener('submit', function (e) {
     } else {
         showsuccess(email)
     }
+    checkpassword(password,password2)
+    checkinputlength(username,5,10)
+    checkinputlength(password,5,12)
 })
 function showerror(input, message) {
     const formcontrol = input.parentElement
@@ -48,5 +51,23 @@ function getinputcase(input){
     console.log(input)
    
     return input.id.charAt(0).toUpperCase()+input.id.slice(1);
+
+}
+function checkpassword(password,password2){
+    if(password.value !== password2.value){
+        showerror(password2,'รหัสผ่านไม่ตรงกัน')
+    }
+}
+
+function checkinputlength(input,min,max){
+
+    if(input.value.length <= min){
+        showerror(input,`กรุณาป้อน ${getinputcase(input)} ต้องมากกว่า ${min} ตัวอักษร`)
+    }else if(input.value.length> max){
+        showerror(input,`กรุณาป้อน ${getinputcase(input)} ต้องไม่เกิน ${max} ตัวอักษร`)
+
+    }else{
+        showsuccess(input)
+    }
 
 }
