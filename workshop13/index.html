@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="main-title">แผนผังการทำงาน
+    </h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+            
+            <li class="drag-column backlogcolum">
+                <span class="header">
+                    <h1>งานค้าง</h1>
+                </span>
+
+                <div class="cumtom-scroll" id="backlogcontact">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item">ออกแบบ Animation</li>
+                        <li class="drag-item">สงงานลูกค้า</li>
+                        <li class="drag-item">เสนองบประมาณ</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drag-column progrescolumn">
+                <span class="header">
+                    <h1>ดำเนินการ</h1>
+                </span>
+
+                <div class="cumtom-scroll" id="progrescolumn">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item" draggable="true">ออกแบบ Animation</li>
+                        <li class="drag-item" draggable="true">สงงานลูกค้า</li>
+                        <li class="drag-item" draggable="true">เสนองบประมาณ</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drag-column completecolumn">
+                <span class="header">
+                    <h1>เสร็จสมบูรณ์</h1>
+                </span>
+
+                <div class="cumtom-scroll" id="completecolumn">
+                  
+                </div>
+            </li>
+            <li class="drag-column rejectolumn">
+                <span class="header">
+                    <h1>งานที่ไม่ผ่าน</h1>
+                </span>
+
+                <div class="cumtom-scroll" id="rejectolumn">
+                   
+                </div>
+            </li>
+      
+        </ul>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
