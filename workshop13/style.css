@@ -2,7 +2,7 @@
     --category-1:#a2622d;
     --category-2:#1b6161;
     --category-3:#248224;
-    --category-2:#a22d22;
+    --category-4:#a22d22;
 
 }
 
@@ -61,7 +61,7 @@ ul{
 .header h1{
     font-size: 1.25rem;
 }
-.backlog-column .header{
+.backlogcolum .header{
     background-color: var(--category-1);
 }
 .progrescolumn .header{
