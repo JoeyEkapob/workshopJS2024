@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ระบบจองภาพยนต์</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="moive-container">
         <label for="">เลือกภาพยนต์ :</label>
-        <select name="" id="moive">
+        <select name="" id="movie">
             <option value="150">มู่หลาน | $150</option>
             <option value="350">เทสล่า | $350</option>
             <option value="250">Deadpool | $250</option>
@@ -22,7 +23,7 @@
             <small>ว่าง</small>
         </li>
         <li>
-            <div class="seat selected"> </div>
+            <div class="seat select"> </div>
             <small>ที่นั่งของเรา</small>
         </li>
         <li>
@@ -31,15 +32,15 @@
         </li>
     </ul>
     <div class="container">
-        <div class="screen">
+        <div class="screen">   </div>
             <div class="row">
                 <div class="seat"></div>
                 <div class="seat"></div>
+                <div class="seat " ></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
                 
@@ -105,11 +106,12 @@
             </div>
 
             
-        </div>
+     
     </div>
-    <p class="text">เลือกจำนวน</p>
-    <span id="count">0</span> ที่นั่ง
-    ยอดชำระเงืน<span id="total">0</span> บาท
+    <p class="text">เลือกจำนวน
+        <span id="count">0</span> ที่นั่ง
+        ยอดชำระเงิน <span id="total">0</span> บาท
+    </p>
 </body>
-
+<script src="script.js"></script>
 </html>
