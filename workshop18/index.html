@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Slider || workshop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">หน้า่แรก</a></li>
+            <li><a href="#">เกี่ยวกับ</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+    <header>
+        <button id="toggle" class="toggle"> 
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>Joey Ekapob</h1>
+        <p>เอกภพ เสสันเทียะ</p>
+        <button class="createaccount" id="open">สมัครสมาชิก</button>
+    </header>
+    <div class="container">
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorum praesentium, voluptas quis placeat dolores nulla quasi dicta laborum nostrum nam cupiditate odit deleniti pariatur eum fugit natus? Cum, minus!</p>
+        <h2>Game Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non, a quas illum hic eveniet architecto explicabo sit aliquid nisi autem fugiat id earum sunt obcaecati, vel qui nihil minima?</p>
+    </div>
+    <div class="modalcontainer" id="modal-container">
+        <div class="modal">
+            <button class="closebtn" id="closebtn"><i class="fa fa-times"></i></button>
+            <div class="modal-header">
+                <h3>สมัครสมาชิก</h3>
+            </div>
+            <div class="modal-contant">
+                <p>แบบฟอร์ม</p>
+                <div class="modal-form">
+                    <p>แบบฟอร์ม</p>
+                    <div>
+                        <label for="">ชื่อผู้ใช้</label>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div>
+                        <label for="">อีเมล</label>
+                        <input type="email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="">รหัสผ่าน</label>
+                        <input type="text" class="form-input">
+                    </div>
+                    <input type="submit" value="บันทึก" class="submitbtn">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
