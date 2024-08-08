@@ -32,7 +32,7 @@ function createsinglecard(data,index){
     card.innerHTML=`
     <div class="innercard">
           <div class="innercardfront">
-            <p>${data.qusetion}</p>
+            <p>${data.question}</p>
           </div>
           <div class="innercardback">
             <p>${data.answer}</p>
@@ -103,6 +103,7 @@ function setcarddata(carddata){
 
 function getcarddata(){
     const cards=JSON.parse(localStorage.getItem('datacards'))
+    console.log(cards)
     return cards === null ? [] : cards
 }
 clearbtn.addEventListener('click',()=>{

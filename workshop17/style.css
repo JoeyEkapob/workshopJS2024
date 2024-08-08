@@ -63,6 +63,7 @@ h1 button{
     transform: translateX(0) rotateY(0);
     cursor: pointer;
     z-index:10;
+    
 
 }
 
@@ -89,8 +90,9 @@ h1 button{
     background: #fff;
 }
 
-.card .show-answer .innercard{
+.card.show-answer .innercard{
     transform: rotateX(180deg);
+    background-color: #999;
 }
 .innercardfront{
     transform: rotateX(0deg);
