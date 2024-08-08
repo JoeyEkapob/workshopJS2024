@@ -1,6 +1,6 @@
 const toggle = document.getElementById('toggle')
 const open = document.getElementById('open')
-const modalcontainer = document.getElementById('modal-container')
+const modalcontainer = document.getElementById('modal')
 const closebtn = document.getElementById('closebtn')
 
 toggle.addEventListener('click',()=>{
@@ -12,7 +12,7 @@ open.addEventListener('click',()=>{
 })
 closebtn.addEventListener('click',()=>{
     modalcontainer.classList.remove('show-modal')
-    console.log('sdfsdf')
+  
 })
 
 window.addEventListener('click',e=>e.target == modalcontainer ? modalcontainer.classList.remove('show-modal'):false)

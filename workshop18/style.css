@@ -81,6 +81,7 @@ button , input[type="submit"]{
 }
 .createaccount{
     padding: 12px 30px;
+    font-size: 16px;
 }
 .container{
     padding: 15px;
@@ -95,7 +96,7 @@ body.show-nav{
 body{
     transition: transform 0.3s ease;
 }
-.modal-container{
+.modalcontainer{
     display: none; 
    background-color: rgba(0, 0, 0, 0.6);
    position: fixed;
@@ -117,7 +118,7 @@ body{
     width: 400px;
 
 }
-.modal-container.show-modal{
+.modalcontainer.show-modal{
     display: block;
 }
 
@@ -126,7 +127,7 @@ body{
     animation-duration: var(--model-delay);
 }
 
-/* .modal-header{
+ .modal-header{
     background-color: var(--primary-color);
     color: #fff;
     padding: 15px;
@@ -134,9 +135,10 @@ body{
 }
 .modal-header h3{
     margin: 0;
+   /*  background-color: aqua; */
 }
-.modalcontainer{
-    padding: 20px;
+.modal-container{
+    padding: 0 20px;
 }
 .modal-form div{
     margin: 15px 0;
@@ -144,9 +146,9 @@ body{
 }
 .modal-form label{
     display: block;
-    margin-bottom:5px ;
+    margin-bottom:10px ;
 }
-.modal-form input{
+.modal-form .form-input{
     padding: 8px;
     width: 100%;
 }
@@ -156,8 +158,12 @@ body{
     right: 0;
     background-color: transparent;
     font-size: 25px;
+   
 
-} */
+} 
+.submitbtn{
+    margin-bottom: 10px;
+}
 @keyframes modalOpen{
     from{
         opacity: 0;
