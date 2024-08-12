@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+
+}
+.container{
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.contant{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.contant.left{
+    left: 0;
+    background-image: url(image/Content1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.contant.right{
+    right: 0;
+    background-image: url(image/Content2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contant::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+h1{
+    font-size: 4rem;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+.btn{
+    position: absolute;
+    left: 50%;
+    top:65%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5rem;
+    border: #fff solid 0.2rem;
+    font-size: 1.2rem;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+
+
+}
+.contant.left .btn:hover{
+    background-color: orange;
+    border-color: orange;
+}
+.contant.right .btn:hover{
+    background-color: greenyellow;
+    border-color: greenyellow;
+}
+
+.hover-left .left{
+    width: 80%;
+
+}
+.hover-left .right{
+    width: 20%;
+
+}
+.hover-right .right{
+    width: 80%;
+
+}
+.hover-right .left{
+    width: 20%;
+
+}
+
+.contant.left,.contant.right,.contant.left::before,.contant.right::before{
+    transition: all 1s ease-in-out;
+}
