@@ -12,16 +12,17 @@ body{
     width: 100vw;
     height: 100vh;
 }
-.leftcontainer{
+.leftcontant{
     width: 35%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform 0.5s ease-in-out;
 
 
 }
-.leftcontainer>div{
+.leftcontant>div{
     width: 100%;
     height: 100%;
     display: flex;
@@ -31,39 +32,37 @@ body{
     color: #fff;
     text-align: center;
 }
-.leftcontainer h1{
+.leftcontant h1{
     font-size: 40px;
     margin-bottom: 10px;
     margin-top: -30px;
 
 }
-.rightcontainer{
+.rightcontant{
     position: absolute;
     top:0%;
     width: 65%;
     height: 100%;
     left: 35%;
+    transition: transform 0.5s ease-in-out;
 
 }
-.rightcontainer>div{
+.rightcontant>div{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
 }
-.slidercontainer .actionbtn button{
+.sildercontainer .actionbtn button{
     position: absolute;
-    left: 35%;
-    top: 45%;
+    left:35%;
+    top:45%;
     z-index: 100;
-
-
-
 }
-.slidercontainer .actionbtn .downbtn{
+.sildercontainer .actionbtn .downbtn{
   transform: translateX(-100%);
 }
-.slidercontainer .actionbtn .upbtn{
+.sildercontainer .actionbtn .upbtn{
     transform: translateY(-100%);
   }
