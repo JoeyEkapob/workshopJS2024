@@ -29,10 +29,10 @@ img{
     height: 100%;
 
 }
-.cardcontact{
+.container{
     background-color: #fff;
     padding: 30px;
-}
+} 
 .title{
     height:20px ;
     margin: 0;
@@ -86,4 +86,4 @@ img{
     100%{
         background-position:-150% 0; 
     }
-}
+} 
