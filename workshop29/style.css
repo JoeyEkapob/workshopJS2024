@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.card{
+    width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.3);
+
+}
+img{
+    max-width: 100%;
+
+}
+.cardheader{
+    height: 200px;
+}
+.cardheader img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+.cardcontact{
+    background-color: #fff;
+    padding: 30px;
+}
+.title{
+    height:20px ;
+    margin: 0;
+
+}
+.carddescription{
+    color: #777;
+    margin: 10px 0 20px;
+}
+.seller{
+    display: flex;
+}
+.profileimg{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+.sellerinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+    width: 100px;
+}
+.sellerinfo small{
+    color:#999;
+    margin-top: 5px;
+}
+.animatedbg{
+    background-image: linear-gradient(
+        to right,#f6f7f8 0%,#edeef1 10%,#f6f7f8 20%,#f6f7f8 100%
+    );
+    background-size: 200% 100%;
+    animation: animatedplay 1s linear infinite;
+}
+.animatedtext{
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
+    height: 10px;
+    width: 100%;
+
+}
+
+@keyframes animatedplay{
+    0%{
+        background-position:50% 0; 
+    }
+    100%{
+        background-position:-150% 0; 
+    }
+}
