@@ -4,6 +4,7 @@ const userdata = [
         job:"พนักงานประจำ",
         text:"อากาศดี อาหารอร่อย ห้องพักสะอาดมาก",
         image:"https://randomuser.me/api/portraits/women/86.jpg"
+        
     },
     {
         name:"ก้อง รักสยาม",
@@ -40,13 +41,18 @@ let avtiveindex = 0;
 function showreview(){
     const {name,job,text,image} = userdata[avtiveindex];
     review.innerHTML=text
-    userimg.innerHTML=image
+    userimg.src=image
     username.innerHTML=name
     userjob.innerHTML=job
 
     avtiveindex++
-}
-if(avtiveindex>userdata.length){
+
+
+if(avtiveindex > userdata.length-1){
     avtiveindex=0
 }
-setInterval(showreview,10000);
+
+}
+
+
+setInterval(showreview,1000);

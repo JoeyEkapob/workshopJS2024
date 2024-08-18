@@ -63,7 +63,7 @@ body{
     height: 4px;
     width: 100%;
     transform-origin: left;
-    animation : processing 10s linear infinite;
+    animation : processing 5s linear infinite;
 }
 @keyframes processing{
     0%{
