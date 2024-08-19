@@ -14,7 +14,7 @@ rating.forEach((star,selectindex)=>{
 
              console.log(choices)
         })
-        result.innerText="ผลการประเมิน " +(selectindex+1) + " / 5"
+        result.innerText="ผลการประเมิน " +(selectindex+1) + " / "+ rating.length
 
     })
 })
