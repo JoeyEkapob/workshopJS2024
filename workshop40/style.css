@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+.container{
+    background: url(S__6914052.jpg);
+    width: 400px;
+    height: 600px;
+    background-size: cover;
+    background-position: center ;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+i{
+    position: absolute;
+    font-size: 50px;
+    left: 48%;
+    top: 50%;
+    opacity:0
+
+}
