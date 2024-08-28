@@ -14,24 +14,42 @@ let player={
     width:playerwidth,
     height:playerheight
 }
-
-
+let velocity=0;
+let gravity=0.25       ;
 window.onload=function(){
     
     board = document.getElementById('borad')
-     board.height=boardheight
+    board.height=boardheight
     board.width=boardwidth
     context=board.getContext('2d')
     playerimg=new Image()
     playerimg.src="./img/player.png"
     playerimg.onload=function(){
         
-            console.log(playerimg)
+            
             context.drawImage(playerimg,player.x,player.y,player.width,player.height)
         
     }
+    requestAnimationFrame(update)
+    document.addEventListener('keydown',movePlayer)
+
 }
 
+function update(){
+    requestAnimationFrame(update)
+    context.clearRect(0,0,board.width,board.height)
+    velocity+=gravity
+    player.y= Math.min(player.y+velocity,playerY)/* Math.min(player.y+velocity,playerY) */
+    context.drawImage(playerimg,player.x,player.y,player.width,player.height)
+
+}
+
+function movePlayer(e){
+    if(e.code==="Space" && player.y == playerY ){
+       
+        velocity=-10
+    }
+}
 /* const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 const img = new Image()
